@@ -1,0 +1,229 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.css" media="all" />
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script> 
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/widget.js"></script>
+<title>jQuery Popup Generator by Making Different</title>
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #FC7507;
+	-moz-box-shadow: 1px 1px 1px #FC7507;
+	box-shadow: 1px 1px 1px #FC7507;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+.textarea-box, .textareaBox{
+	border:1px solid #F9780E;
+	padding:6px;
+	-webkit-resize: none;
+	-moz-resize: none;
+	resize: none;
+	-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px #dfdfdf;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.textareaBox{
+	display:block;
+	width:90%;
+	padding:10px;
+	max-width:98%;
+	margin:20px auto;
+	max-height:600px;
+	min-height:200px;
+}
+
+			body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left; 
+background:#FFFFFF;
+}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #FFFFFF;font-size:16px;color:#000;border:1px solid #111;
+}
+</style>
+<script type='text/javascript'>
+//<!--
+function makingdifferentcodegen() {
+var showtime=document.getElementsByName("mdshowtime")[0].checked;
+var contentarea=document.getElementsByName("mdcontentarea")[0].value;
+var pt=document.getElementsByName("mdpt")[0].value;
+var tbc=document.getElementsByName("mdtbc")[0].value;
+var tfc=document.getElementsByName("mdtfc")[0].value;
+var tfs=document.getElementsByName("mdtfs")[0].value;
+var bc=document.getElementsByName("mdbc")[0].value;
+var cbc=document.getElementsByName("mdcbc")[0].value;
+var t=document.getElementsByName("mdt")[0].value;
+var widget = document.getElementsByName("mdcode")[0];
+widget.value = "<script type=\"text\/javascript\">\n";
+widget.value += "$(document).ready(function(){\n";
+widget.value += "$(\"#Minimizable\").show();\n";
+widget.value += "	$(\".btn-slide\").click(function(){\n";
+widget.value += "	  $(\"#Minimizable\").slideToggle(\"fast\");\n";
+widget.value += "	  $(this).toggleClass(\"active\");\n";
+widget.value += "	});\n";
+widget.value += "\n";
+widget.value += "function makingdifferent_ppopup()  {\n";
+if(showtime){
+widget.value += "var sec = "+ t +"\n";
+widget.value += "var timer = setInterval(function() {\n";
+widget.value += "   $(\"#mdpopup2013 span\").text(sec--);\n";
+widget.value += "   if (sec == 0) {\n";
+widget.value += "      $(\"#mdpopup2013\").fadeOut(\"slow\");\n";
+widget.value += "      clearInterval(timer);\n";
+widget.value += "   }\n";
+widget.value += "}, "+ t +"00);\n";}
+else{widget.value += "";}
+widget.value += "  var mdwh = jQuery(window).height();\n";
+widget.value += "  var mdpph = jQuery(\"#mdpopup2013\").height();\n";
+widget.value += "  var mdfromTop = jQuery(window).scrollTop()+50;\n";
+widget.value += " jQuery(\"#mdpopup2013\").css({\"top\":mdfromTop});}\n";
+widget.value += "jQuery(window).fadeIn(makingdifferent_ppopup).resize(makingdifferent_ppopup)\n";
+widget.value += " \/\/alert(jQuery.cookie('sreqshown'));\n";
+widget.value += " \/\/var mdww = jQuery(window).width();\n";
+widget.value += " \/\/var mdppw = jQuery(\"#mdpopup2013\").width();\n";
+widget.value += " \/\/var mdleftm = (mdww-mdppw)\/2;\n";
+widget.value += "   var mdleftm = 500;\n";
+widget.value += " \/\/var mdwh = jQuery(window).height();\n";
+widget.value += " \/\/var mdpph = jQuery(\"#mdpopup2013\").height();\n";
+widget.value += " \/\/var mdfromTop = (jQuery(window).scrollTop()+mdwh-mdpph) \/ 2;\n";
+widget.value += " jQuery(\"#mdpopup2013\").animate({opacity: \"1\", left: \"0\" , left:  mdleftm},\n 0).show();\n";
+widget.value += "     jQuery(\"#mdclose\").click(function() {\n";
+widget.value += "jQuery(\"#mdpopup2013\").fadeOut().hide();});});\n";
+widget.value += "<\/script>\n";
+widget.value += "<TABLE id='mdpopup2013' style='position: fixed;top:100px;z-index:9999;display:none;overflow:hidden;padding:0px;border-width:2px;border-style:solid;border-color:#"+ bc +"; border='0' cellspacing='0' cellpadding='0'>";
+widget.value += "<TR style='background:#"+ tbc +"'>\n";
+widget.value += "<TD style='border:none;text-align:left;height:18px;color:#"+ tfc +";font-family:Tahoma,sans-serif;font-size:"+ tfs +"pt;font-weight:bold;padding:0px 2px 1px 2px;cursor:default'>\n";
+widget.value += "<A href='http:\/\/gj37765.blogspot.com\/2013\/01\/free-online-jquery-popup-generator.html' title='Grab This Widget' target=_blank style='text-decoration:none;float:left'>\n";
+widget.value += "<IMG border=0 src='http:\/\/2.bp.blogspot.com\/-hnZfHNO-4nM\/UO6lAA7danI\/AAAAAAAAHCA\/Nj9VxIHAXwk\/s1600\/help.png' alt='Grab This Widget'><\/A>\n";
+widget.value += "<DIV style='margin-left:18px'>"+ pt +" <\/DIV>\n";
+widget.value += "<TD style='border:none;cursor:default;vertical-align:top;padding:1px'>\n";
+widget.value += "<DIV style='float:right;text-align:right'><TABLE border='0' cellspacing='0' cellpadding='0' style='width:1px'>\n";
+widget.value += "<TR>\n";
+widget.value += "<TD style='border:none;cursor:default;vertical-align:top;padding:1px'>";
+widget.value += "<DIV style='padding:1px;margin:0px;line-height:10px;font-family:Tahoma,sans-serif;font-size:10pt;overflow:hidden;border:outset 2px #FFFFFF;width:11px;height:11px;color:#000000;background-color:#E0E0E0;font-weight:bold'>\n";
+widget.value += "<DIV class='btn-slide' style='padding:0px;margin:0px;line-height:10px;font-family:Tahoma,sans-serif;font-size:10pt;overflow:hidden;border-style:solid;border-color:#000000;border-width:0px 0px 2px 0px;width:10px;height:8px;color:#000000;background-color:#E0E0E0;font-weight:bold'>&nbsp;<\/DIV>\n";
+widget.value += "<\/DIV>\n";
+widget.value += "<TD style='border:none;cursor:default;vertical-align:top;padding:1px 1px 1px 1px'>\n";
+widget.value += "<DIV id='mdclose' style='text-align:left;padding:1px 1px 1px 2px;margin:0px;line-height:10px;font-family:Tahoma,sans-serif;font-size:10pt;overflow:hidden;border:outset 2px #FFFFFF;width:10px;height:11px;color:#000000;background-color:#E0E0E0;font-weight:bold'>X<\/DIV>\n";
+widget.value += "<\/TABLE>\n";
+widget.value += "<\/DIV>\n";
+widget.value += "<TR style='background-color:#"+ cbc +"'>\n";
+widget.value += "<TD colspan=2 style='padding:0px'>\n";
+widget.value += "<TABLE id='Minimizable' cellspacing='0' cellpadding='0' border='0'>\n";
+widget.value += "<TR>\n";
+widget.value += "<TD>\n";
+widget.value += ""+ contentarea +"\n";
+widget.value += "<TR>\n";
+widget.value += "<\/TABLE>\n";
+widget.value += "<\/TABLE>\n";
+document.getElementsByName("preview")[0].disabled=false;
+}
+function mdpredemo() {	
+var demodata = document.getElementsByName('mdjs')[0].value  + document.getElementsByName('mdcode')[0].value;
+newwindow=window.open('','name','');
+var tmp = newwindow.document;tmp.write('' + demodata + '');tmp.close();
+}
+//-->
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>jQuery Popup Generator by Muhammad Akbar</h2>
+<fieldset><legend>Settings</legend><br>
+<table width="100%">
+<tr>
+<td width='60%'><label for='mdpt'>Popup Title</label>:</td>
+<td width='40%'><input class='text-input' type='text'  id='mdpt' name='mdpt' value='Popup Title Text' size='30'></input></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdtbc'>Title Background Color</label>:</td>
+<td width='40%'>#<input class='inputcolor text-input' type='text' id='mdtbc' name='mdtbc' value='4050F0' size='6'></input><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdtfc'>Title Font Color</label>:</td>
+<td width='40%'>#<input class='inputcolor text-input' type='text' id='mdtfc' name='mdtfc' value='FFFFFF' size='6'></input><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdtfs'>Title Font Size</label>:</td>
+<td width='40%'>&nbsp;&nbsp;<input class='text-input' type='text' id='mdtfs' name='mdtfs' value='8' size='4'> pt</input></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<td width='60%'><label for='mdcontentarea'>Enter Popup Content in this box (Use HTML Content)</label>:</td>
+<td width='40%'><textarea class='textarea-box' id='mdcontentarea' name='mdcontentarea' cols='46' rows='6'><TABLE width='300px' height='200px' border='0' cellspacing='0' cellpadding='5' style='color: #5070E0; font-family: Verdana, sans-serif; font-size: 8pt; text-align: center'><TR><TD style='color: #FF0000; font-size: 7pt; text-align: left'>
+<B>Download free E book and Learn HTML & CSS ~ For Beginners
+ <A href='http://muhammadakbar1.blogspot.in/2012/10/download-free-e-book-and-learn-html-css.html'>Click Here !</A></B>.
+<TR>
+  <TD>
+    Awesome 20+ Social Sharing Widgets For Blogger</B> <B style='color: #FF0000'>by Muhammad Akbar</B> Please Check-
+    <A href='http://muhammadakbar1.blogspot.in/2012/10/awesome-20-social-sharing-widgets-for.html' title='Awesome 20+ Social Sharing Widgets For Blogger by Muhammad Akbar'>
+      Click me!
+    </A>
+<TR>
+  <TD>
+    <a href="http://muhammadakbar1.blogspot.com" target="_blank">
+    <img src="https://gp3.googleusercontent.com/-Vc6uz5xfiPY/AAAAAAAAAAI/AAAAAAAAAAA/XmoCIP7Vq-c/w48-h48-p/photo.jpg" alt="Making Different - Tips Tricks And Tutorials" style="border:0">
+    </a>
+</TABLE></textarea>
+</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdbc'>Border Color</label>:</td>
+<td width='40%'>#<input class='inputcolor text-input' type='text' id='mdbc' name='mdbc' value='09B0FF' size='6'></input><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdcbc'>Content Background Color</label>:</td>
+<td width='40%'>#<input class='inputcolor text-input' type='text' id='mdcbc' name='mdcbc' value='FFFFFF' size='6'></input><span class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><input id='mdshowtime' name="mdshowtime" checked="checked" type="checkbox"><label for='mdshowtime'>Auto Close after</label>:</td><td width='40%'>&nbsp;&nbsp;<input class='text-input' type='text' id='mdt' name='mdt' value='10' size='6'> Second*</input></td>
+</tr>
+</table>
+</fieldset>
+<center><input value='Generate' style='font-size: 22px; width: 175px;' type='button' onclick='javascript:makingdifferentcodegen();'/><input style="font-size: 22px; width: 175px;" type="button" disabled="disabled" name="preview"  value="Preview"  onclick="javascript:mdpredemo();" /></center>
+<textarea class='textareaBox' name='mdcode' onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style='background:#ffffff;width:100%;height:200px;' readonly='readonly'></textarea>
+<textarea name="mdjs" style="display: none; height: 0px; width: 0px;">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
+</textarea>
+<center><span style="font-size: small;"> Copyright &copy; 2013 All Rights Reserved by <a class="g-profile" href="http://muhammadakbar1.blogspot.com" target="_blank">Muhammad Akbar</a> @ <a href='http://www.muhammadakbar1.blogspot.com/' target="_blank">Muhammad Akbar</a></span></center>
+</div>
+</body>
+</html>

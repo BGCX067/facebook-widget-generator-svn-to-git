@@ -1,0 +1,174 @@
+/*----------------------------------------------------
+Created by Muhammad Akbar
+Don't remove credits and you're free to use this
+Blog - muhammadakbar1.blogspot.com
+Download This At - css-box.blogspot.com
+----------------------------------------------------*/
+body {
+	background: url(img/Background.jpg) bottom no-repeat;
+	background-color:58169a;
+}
+
+
+span.start {
+	color:white;
+	font-size:2em;
+
+}
+
+.credits {
+	color:white;
+	text-align:right;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+.metro-surface{
+	padding: 40px 0px 0px 0px;
+}
+
+
+.metro-tile {
+	background-color: #D8512B;
+	border-color: #DC6241;
+	width: 232px;
+	height: 104px;
+	padding: 5px;
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 12px;
+	border-width: 3px;
+	border-style: solid;
+	cursor: default;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+
+.metro-tile-small {
+	width: 104px;
+	height: 104px;
+}
+
+
+.metro-tile-store {
+	background: url(http://3.bp.blogspot.com/-TVxntFM4GKg/UQYBo8ur4cI/AAAAAAAABLk/NqsbKaEeQeI/s1600/Store.png);
+	background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-xbox {
+	background: url(http://1.bp.blogspot.com/-VHv5Mud_p84/UQYBpmAmKsI/AAAAAAAABL8/dfbj9XrxuoE/s1600/XBox.png);
+	background-position: 8px 8px;
+        background-color:#6CB71E;
+        border-color:#6CB71E;
+}
+
+
+.metro-tile-google {
+	background: url(http://1.bp.blogspot.com/-wtlG3G8JAjY/UQYBncM6XeI/AAAAAAAABK8/-vFt8sXgWb0/s1600/Google.png);
+	background-color: #009719;
+	border-color: #009719;
+}
+
+
+.metro-tile-angrybirds {
+	background: url(http://4.bp.blogspot.com/-VCoNYDTKE74/UQYBle1l7sI/AAAAAAAABKQ/AjgIFsgKSfQ/s1600/AngryBirds.jpg);
+        border-image: url(img/AngryBirds.jpg) 1;
+}
+
+
+.metro-tile-music {
+	background: url('http://2.bp.blogspot.com/-Azojqm6HQZM/UQYBm1oLmZI/AAAAAAAABKs/-bKm7-K3ZPA/s1600/Gangnam.jpg');
+        background-color: #D8512B;
+	border-color: #D8512B;
+}
+
+
+.metro-tile-ie {
+	background: url('http://3.bp.blogspot.com/-oIeaOZdCWpk/UQYBnnsn-vI/AAAAAAAABLM/wrdnE6a6ucU/s1600/IE.png');
+        background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-image {
+	background: url(http://4.bp.blogspot.com/-aXRzwuo5tNA/UQYBoJDyphI/AAAAAAAABLI/TJb6LUs2GkM/s1600/Image.jpg);
+	border-color: black;
+}
+
+
+.metro-tile-tweet {
+	background: url(http://1.bp.blogspot.com/-pOxhtWg-Oo4/UQYBo3Bq-dI/AAAAAAAABLo/9hL5ENIpDo0/s1600/Tweet.png);
+	background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-msg {
+	background: url(http://2.bp.blogspot.com/-OzPVaU9zBy0/UQYBoPGfwdI/AAAAAAAABLQ/3VJO27Nrb3I/s1600/Messaging.png);
+	background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-player {
+	background: url(http://2.bp.blogspot.com/-Azojqm6HQZM/UQYBm1oLmZI/AAAAAAAABKs/-bKm7-K3ZPA/s1600/Gangnam.jpg);
+	border-color: black;
+}
+
+
+.metro-tile-facebook {
+	background: url(http://3.bp.blogspot.com/-1_p-oKkOCk0/UQYBmTUWgsI/AAAAAAAABKk/9lH_6Xk4M98/s1600/Facebook.png);
+	background-color: #3B5998;
+	border-color: #3B5998;
+}
+
+
+.metro-tile-twitter {
+	background: url(http://2.bp.blogspot.com/-N3S87r5sXak/UQYBpY1G7YI/AAAAAAAABLw/mNTXI9FQyLM/s1600/Twitter.png);
+	background-color: #2878EC;
+	background-position: 0 10px;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-aciii {
+	background: url(http://1.bp.blogspot.com/-1nskHKz-kVU/UQYBlNK6KOI/AAAAAAAABKM/kN-Yjydd2RI/s1600/AC3.jpg);
+	border-color: black;
+}
+
+
+.metro-tile-gmail {
+	background: url(http://4.bp.blogspot.com/-bgcfbdS39wA/UQYBnB_9xLI/AAAAAAAABK0/C2j6B4SAjjo/s1600/Gmail.png);
+	background-color: #009719;
+	border-color: #009719;
+}
+
+
+.metro-tile-dropbox {
+	background: url(http://4.bp.blogspot.com/-cbQMRbo9bJQ/UQYBmVHuZ7I/AAAAAAAABKg/DLTVtQ7B-kg/s1600/Dropbox.png);
+	background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-blogger {
+	background: url(http://1.bp.blogspot.com/-PEDTCHvQmj4/UQYBmPUaXhI/AAAAAAAABKY/H2q9h4v2-_M/s1600/Blogger.png);
+	background-color: #D8512B;
+	border-color: #D8512B;
+}
+
+
+div.metro-tile:hover {
+	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	border-width: 3px;
+	border-style:solid; 
+}

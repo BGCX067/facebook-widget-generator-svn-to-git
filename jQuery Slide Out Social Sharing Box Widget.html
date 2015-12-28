@@ -1,0 +1,134 @@
+
+<html>
+<head>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'>
+</script> 
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/jquery.validationEngine.js"></script>
+<title>jQuery Slide Out Social Sharing Box Widget Generator by Muhammad Akbar</title>
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #FC7507;
+	-moz-box-shadow: 1px 1px 1px #FC7507;
+	box-shadow: 1px 1px 1px #FC7507;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+
+			body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left; 
+background:#ffffff;
+}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+}
+		</style>
+<script>
+function makingdifferentcodegen() {
+var p = document.getElementsByName("mdp")[0].value;
+var fb = document.getElementsByName("mdfb")[0].value;
+var gp = document.getElementsByName("mdgp")[0].value;
+var t = document.getElementsByName("mdt")[0].value;
+var makingdifferentcode = document.getElementsByName("widget.content")[0];
+makingdifferentcode.value = "<style>\n";
+makingdifferentcode.value += "#MDslidebox {\n";
+makingdifferentcode.value += "    background: none repeat scroll 0 0 #F3F3F3;\n";
+makingdifferentcode.value += "    border-radius: 9px 9px 9px 9px;\n";
+makingdifferentcode.value += "    border: 1px solid #D7D7D7;\n";
+makingdifferentcode.value += "    top: 50px;\n";
+makingdifferentcode.value += "    display: none;\n";
+makingdifferentcode.value += "    padding: 12px 14px;\n";
+makingdifferentcode.value += "    position: fixed;\n";
+makingdifferentcode.value += "    "+ p +": 2px;\n";
+makingdifferentcode.value += "    width: 300px;\n";
+makingdifferentcode.value += "    z-index: 3;\n";
+makingdifferentcode.value += "}\n";
+makingdifferentcode.value += "<\/style>\n";
+makingdifferentcode.value += "\n";
+makingdifferentcode.value += "<!-- slidebox widget by Muhammad Akbar @ www.muhammadakbar1.blogspot.com -->\n";
+makingdifferentcode.value += "<script type=\"text\/javascript\">\n";
+makingdifferentcode.value += "$(window).scroll(function(){\n";
+makingdifferentcode.value += "if($(document).scrollTop()>=$(document).height()\n\/4)$(\"#MDslidebox\").show(\"slow\");\n";
+makingdifferentcode.value += "else $(\"#MDslidebox\").hide(\"slow\");});\n";
+makingdifferentcode.value += "function closeMDslidebox(){$('#MDslidebox').remove();}\n";
+makingdifferentcode.value += "<\/script>\n";
+makingdifferentcode.value += "\n";
+makingdifferentcode.value += "  <div id=\"MDslidebox\" style=\"display: none;\">\n";
+makingdifferentcode.value += "	<a onclick=\"return closeMDslidebox();\" href=\"javascript:void(0);\" style=\"position:absolute;top:14px;right:10px;color:#555;font-size:10px;font-weight:bold;\">(X)<\/a>\n";
+makingdifferentcode.value += "	<span style=\"font-size:14px;color:#000;font-weight:bold\">Don't forget to join our community.<\/span>\n";
+makingdifferentcode.value += "	<iframe src=\"\/\/www.facebook.com\/plugins\/likebox.php?href="+ fb +"&amp;width=292&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;border_color=black&amp;stream=false&amp;header=true\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:292px; height:62px;\" allowtransparency=\"true\"><\/iframe>\n";
+makingdifferentcode.value += "<br\/>\n";
+makingdifferentcode.value += "<!-- Place this tag where you want the badge to render. -->\n";
+makingdifferentcode.value += "<div class=\"g-plus\" data-width=\"300\" data-height=\"69\" data-href=\"https:\/\/plus.google.com\/"+ gp +"\" data-rel=\"publisher\"><\/div>\n";
+makingdifferentcode.value += "<!-- Place this tag after the last badge tag. -->\n";
+makingdifferentcode.value += "<script type=\"text\/javascript\">\n";
+makingdifferentcode.value += "  (function() {\n";
+makingdifferentcode.value += "    var po = document.createElement('script'); po.type = 'text\/javascript';\n po.async = true;\n";
+makingdifferentcode.value += "    po.src = 'https:\/\/apis.google.com\/js\/plusone.js';\n";
+makingdifferentcode.value += "    var s = document.getElementsByTagName('script')[0];\n s.parentNode.insertBefore(po, s);\n";
+makingdifferentcode.value += "  })();\n";
+makingdifferentcode.value += "<\/script>\n";
+makingdifferentcode.value += "	<br\/>\n";
+makingdifferentcode.value += "<a href=\"https:\/\/twitter.com\/"+ t +"\" class=\"twitter-follow-button\" data-show-count=\"false\">Follow @"+ t +"<\/a>\n";
+makingdifferentcode.value += "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>\n";
+makingdifferentcode.value += "<\/div>\n";
+makingdifferentcode.value += "<!-- End slidebox -->";
+}
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>jQuery Slide Out Social Sharing Box Widget Generator by Muhammad Akbar</h2>
+<fieldset><legend>Settings</legend><br>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table width="100%">
+<tr>
+<td width='60%'><label for='mdfb'>Facebook Page URL</label>:</td>
+<td width='40%'><input class='text-input' type='url'  id='mdfb' name='mdfb' value='https://www.facebook.com/pages/Muhammad-Akbar/283597121758459' size='30'></input></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdgp'>Google+ Page or Profile ID</label>:</td>
+<td width='40%'><input class='text-input' type='text'  id='mdgp' name='mdgp' value='114323851032739831280' size='30'></input></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdt'>Twitter Username</label>:</td>
+<td width='40%'><input class='text-input' type='text'  id='mdt' name='mdt' value='muhammadakbar00' size='20'></input></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr><td width='60%'><label for='mdp'> Slide Box Position</label>:</td>
+<td width='40%'>
+<select class='select-box' id='mdp'  name='mdp'>
+<option value='right'>Right</option>
+<option value='left'>Left</option> 
+</select></td></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " name="go" value="Add to Blogger" type="submit" onclick="javascript:makingdifferentcodegen();"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://muhammadakbar1.blogspot.com" type="hidden"><input name="logoUrl" value="http://lh3.googleusercontent.com/-Vc6uz5xfiPY/AAAAAAAAAAI/AAAAAAAAAgk/wDXLZTKDw30/s512-c/photo.jpg" type="hidden"></form></center>
+<br>
+<center><small> Copyright &copy; 2012 All Rights Reserved by <a class="g-profile" href="https://plus.google.com/114323851032739831280" target="_blank">Muhammad Akbar</a> @ <a href='http://www.muhammadakbar1.blogspot.com/' target="_blank">Muhammad Akbar</a></small></center>
+</div>
+</body>
+</html>

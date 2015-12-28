@@ -1,0 +1,434 @@
+
+
+<title>Link Popularity</title>
+
+<style type="text/css">
+
+<!--
+
+body {
+
+	background-color: #CDCDCD;
+
+	background-image: url();
+
+	background-repeat: no-repeat;
+
+}
+
+body,td,th {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #000000;
+
+}
+
+a:link {
+
+	color: #0D8747;
+
+}
+
+a:visited {
+
+	color: #0D8747;
+
+}
+
+a:hover {
+
+	color: #000000;
+
+}
+
+a:active {
+
+	color: #000000;
+
+}
+
+.style5 {
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+-->
+
+</style>
+
+<link href="../page-rank-check/css/main.css" rel="stylesheet" />
+
+
+
+		  <style type="text/css">
+
+<!--
+
+.style2 {font-size: 14px}
+
+-->
+
+        </style>
+
+</head>
+
+
+
+<body bgcolor="#CDCDCD">
+
+<script language="JavaScript">
+
+<!--
+
+
+
+/*
+
+Required field(s) validation- By NavSurf
+
+Visit NavSurf.com at http://navsurf.com
+
+Visit http://www.dynamicdrive.com for this script
+
+*/
+
+
+
+function formCheck(formobj){
+
+	//1) Enter name of mandatory fields
+
+	var fieldRequired = Array("url", "emailaddress");
+
+	//2) Enter field description to appear in the dialog box
+
+	var fieldDescription = Array("Website / URL", "Email Address");
+
+	//3) Enter dialog message
+
+	var alertMsg = "Please complete the following fields:\n";
+
+	
+
+	var l_Msg = alertMsg.length;
+
+	
+
+	for (var i = 0; i < fieldRequired.length; i++){
+
+		var obj = formobj.elements[fieldRequired[i]];
+
+		if (obj){
+
+			switch(obj.type){
+
+			case "select-one":
+
+				if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == ""){
+
+					alertMsg += " - " + fieldDescription[i] + "\n";
+
+				}
+
+				break;
+
+			case "select-multiple":
+
+				if (obj.selectedIndex == -1){
+
+					alertMsg += " - " + fieldDescription[i] + "\n";
+
+				}
+
+				break;
+
+			case "text":
+
+			case "textarea":
+
+				if (obj.value == "" || obj.value == null){
+
+					alertMsg += " - " + fieldDescription[i] + "\n";
+
+				}
+
+				break;
+
+			default:
+
+				if (obj.value == "" || obj.value == null){
+
+					alertMsg += " - " + fieldDescription[i] + "\n";
+
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+	if (alertMsg.length == l_Msg){
+
+		return true;
+
+	}else{
+
+		alert(alertMsg);
+
+		return false;
+
+	}
+
+}
+
+//-->
+
+</script>
+
+<script type="text/javascript">
+
+
+
+/***********************************************
+
+* Email Validation script- © Dynamic Drive (www.dynamicdrive.com)
+
+* This notice must stay intact for legal use.
+
+* Visit http://www.dynamicdrive.com/ for full source code
+
+***********************************************/
+
+
+
+var emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
+
+
+
+function checkmail(e){
+
+var returnval=emailfilter.test(e.value)
+
+if (returnval==false){
+
+alert("Please enter a valid email address.")
+
+e.select()
+
+}
+
+return returnval
+
+}
+
+
+
+</script>
+
+To help make life easier in preparing this privacy policy, we have created a &quot;Privacy 
+
+Policy Generator&quot;. Simple enter some basic information in the form below, 
+
+and a privacy policy, specific to your individual website will be created for 
+
+you. Once the policy has been created, simply copy and paste it onto a page on 
+
+your site. You can easily make any modifications you wish.<br>
+
+              <br>
+
+<form method="POST" action="adsense-policy-2.php" onSubmit="return formCheck(this);"> 
+
+  <table width="100%" border="0" align="center" cellpadding="3" cellspacing="3">
+
+    <tr> 
+
+      <td colspan="4"><b>GENERAL SITE INFORMATION</b></td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%"> Site URL: <span align="right">http://</span><br />      </td>
+
+      <td colspan="3"> 
+
+      <input type="text" name="url" value="www." size="35">      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Email Address:</td>
+
+      <td colspan="3"> 
+
+      <input type="text" name="emailaddress" size="35">      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%" height="20">&nbsp;</td>
+
+      <td height="20" colspan="3">&nbsp;</td>
+
+    </tr>
+
+    <tr> 
+
+      <td colspan="4"><b>USE OF COOKIES<br>
+
+        </b><i>** This relates to your actual website, and not any cookies related 
+
+        to third parties such as online advertisers !!</i></td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Yes, we use Cookies</td>
+
+      <td colspan="3"> 
+
+      <input type="radio" name="cookie" value="does use cookies to store information about visitors preferences, record user-specific information on which pages the user access or visit, customize Web page content based on visitors browser type or other information that the visitor sends via their browser." checked>      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">No, we don't use Cookies</td>
+
+      <td colspan="3"> 
+
+      <input type="radio" name="cookie" value="does not use cookies.">      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">&nbsp;</td>
+
+      <td colspan="3">&nbsp;</td>
+
+    </tr>
+
+    <tr> 
+
+      <td colspan="4"><b>ADVERTISER INFORMATION</b></td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%" height="2">Google Adsense</td>
+
+      <td width="24%" height="2"> 
+
+      <input name="adsense" type="checkbox" value="Google Adsense<br>" checked="checked">      </td>
+
+      <td width="21%" height="2">Clickbank</td>
+
+      <td width="25%" height="2"><input name="clickbank" type="checkbox" id="clickbank" value="Clickbank<br>" />      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Commission Junction</td>
+
+      <td> 
+
+      <input type="checkbox" name="cj" value="Commission Junction<br>">      </td>
+
+      <td height="2">Azoogle</td>
+
+      <td height="2"><input name="azoogle" type="checkbox" id="azoogle" value="Azoogle<br>" />      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Adbrite</td>
+
+      <td> 
+
+      <input type="checkbox" name="adbrite" value="Adbrite<br>">      </td>
+
+      <td height="2">Chitika</td>
+
+      <td height="2"><input name="chitika" type="checkbox" id="chitika" value="Chitika<br>" />      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Widget Bucks</td>
+
+      <td> 
+
+      <input type="checkbox" name="wb" value="Widget Bucks<br>">      </td>
+
+      <td height="2">Linkshare</td>
+
+      <td height="2"><input name="linkshare" type="checkbox" id="linkshare" value="Linkshare<br>" />      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">Kontera</td>
+
+      <td> 
+
+      <input type="checkbox" name="kontera" value="Kontera<br>">      </td>
+
+      <td height="2">Amazon</td>
+
+      <td height="2"><input name="amazon" type="checkbox" id="amazon" value="Amazon<br>" />
+
+      </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">&nbsp;</td>
+
+      <td colspan="3">&nbsp; </td>
+
+    </tr>
+
+    <tr> 
+
+      <td width="30%">&nbsp;</td>
+
+      <td colspan="3"> 
+
+      <input name="submit" type="submit" value="Create my Privacy Policy" onClick="return checkmail(this.form.emailaddress)"/>      </td>
+
+    </tr>
+
+  </table>
+
+</form>
+
+<br /><br />
+<div align="center">
+<a href="http://www.serprank.com/traffictravis.php" target="_blank"><img src="traffictravis-seo.gif"></a>
+</div>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,156 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.css" media="all" />
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'>
+</script> 
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/widget.js"></script>
+<title>Minimizable floating facebook like box widget Generator by Muhammad Akbar</title>
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #FC7507;
+	-moz-box-shadow: 1px 1px 1px #FC7507;
+	box-shadow: 1px 1px 1px #FC7507;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+
+			body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left; 
+background:#ffffff;
+border:2px solid #ffffff;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+}
+		</style>
+
+<script type='text/javascript'>
+//<!--
+function makingdifferentcodegen(){
+var w = document.getElementsByName("mdw")[0].value;
+var p = document.getElementsByName("mdp")[0].value;
+var f = document.getElementsByName("mdf")[0].value;
+var b = document.getElementsByName("mdb")[0].value;
+var widget = document.getElementsByName("widget.content")[0];
+widget.value = "<style type='text\/css'>\n";
+widget.value += ".newmdfbplikebox span{bottom: 0;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 0px;text-align: right;z-index: 99999;}.newmdfbplikebox span a{color: #808080;text-decoration:none;}.newmdfbplikebox span a:hover{text-decoration:underline;}";
+widget.value += "<\/style>\n";
+widget.value += "<script>\n";
+widget.value += "function makingdifferentfbcode(show_tbl,hide_tbl){\n		";
+widget.value += "document.getElementById(show_tbl).style.display='';\n";
+widget.value += "document.getElementById(hide_tbl).style.display='none';\n";
+widget.value += "}\n";
+widget.value += "<\/script>";
+widget.value += "<div class=\"newmdfbplikebox\">\n";
+widget.value += "<div id=\"mdfaceid1\" style=\"position: fixed; bottom: 0; "+ p +": 10px; width:"+ w +"px; background-color:#"+ b +";\">\n";
+widget.value += "<div style=\"background-color:#46629d; height:26px;\" onclick=\"javascript:makingdifferentfbcode('mdfaceid2','mdfaceid1')\" >\n";
+widget.value += "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n";
+widget.value += "  <tr>\n";
+widget.value += "    <td>\n";
+widget.value += "	<img src=\"http:\/\/4.bp.blogspot.com\/-RsAaAyVQQSA\/UMdW3aS9eaI\/AAAAAAAAFiA\/YXa7CPQXNdE\/s1600\/%5Bwww.gj37765.blogspot.com%5Dfacebook1.gif\" border=\"0\" width=\"80\" height=\"24\"\/>\n";
+widget.value += "	<\/td>\n";
+widget.value += "    <td width=\"10px\">\n";
+widget.value += "	<img src=\"http:\/\/3.bp.blogspot.com\/-5W407YwZ0P4\/UMdW4J2ljCI\/AAAAAAAAFiI\/EH5w-m7BsHc\/s1600\/%255Bwww.gj37765.blogspot.com%255Dfacebook2.gif\" width=\"20\" height=\"24\" onclick=\"javascript:makingdifferentfbcode('mdfaceid2','mdfaceid1')\" \/>\n";
+widget.value += "	<\/td>\n";
+widget.value += "  <\/tr>\n";
+widget.value += "<\/table>\n";
+widget.value += "<\/div>\n";
+widget.value += "<div id=\"fb-root\"><\/div>\n";
+widget.value += "<script src=\"http:\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\"><\/script>\n<fb:like-box href=\""+ f +"\" width=\""+ w +"\" show_faces=\"true\" stream=\"false\" header=\"false\"><\/fb:like-box>\n";
+widget.value += "<span>\n";
+widget.value += "By <a href=\"http:\/\/www.gj37765.blogspot.com\/\">Making DIfferent<\/a> \/ <a href=\"http:\/\/gj37765.blogspot.com\/2012\/12\/new-minimizable-floating-facebook-like-box-widget-for-blogger.html\">+Get This!<\/a>\n";
+widget.value += "<\/span>\n";
+widget.value += "<\/div>\n";
+widget.value += "<div id=\"mdfaceid2\" style=\"position: fixed; bottom: 0; "+ p +": 10px; width:"+ w +"px; background-color:#FFFFFF; display:none;\" onclick=\"javascript:makingdifferentfbcode('mdfaceid1','mdfaceid2')\">\n";
+widget.value += "<div style=\"background-color:#46629d;height:24px;\">\n";
+widget.value += "<img src=\"http:\/\/4.bp.blogspot.com\/-RsAaAyVQQSA\/UMdW3aS9eaI\/AAAAAAAAFiA\/YXa7CPQXNdE\/s1600\/%5Bwww.gj37765.blogspot.com%5Dfacebook1.gif\" width=\"80\" height=\"24\" onclick=\"javascript:makingdifferentfbcode('mdfaceid1','mdfaceid2')\" \/>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+document.getElementsByName("go")[0].disabled=false;
+document.getElementsByName("preview")[0].disabled=false;
+}
+function mdpredemo() {	
+var demodata = document.getElementsByName('widget.content')[0].value;
+newwindow=window.open('','name','');
+var tmp = newwindow.document;tmp.write('' + demodata + '');tmp.close();
+}
+//-->
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2183095297084034";
+/* Text Advertising */
+google_ad_slot = "3258467339";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<h2>Minimizable floating facebook like box widget Generator by Muhammad Akbar</h2>
+<fieldset class='redi'><legend class='redi' align='left' style='padding:3px 10px;margin-left:20px;'>Settings</legend><br>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table width="100%">
+<tr>
+<td width='60%'><label for='mdf'>Facebook Fan Page URL</label>:</td>
+<td width='40%'><input class='text-input' type='text' id='mdf' name='mdf' value='https://www.facebook.com/pages/Muhammad-Akbar/283597121758459' size='25'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdp'>Position</label></td>
+<td width='40%'>
+<select class='select-box' id='mdp'  name='mdp'>
+<option value='right'>Bottom-right</option>
+<option value='left'>Bottom-left</option> 
+</select>
+</td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdw'>Width</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdw' name='mdw' value='300' size='6'>px</td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdb'>Background color</label></td>
+<td width='40%'>#<input class='inputcolor text-input' type='text' id='mdb' name='mdb' value='ffffff' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:makingdifferentcodegen();" type="button"><input style="width:180px; font-weight:bold;font-size:20px;" type="button" name="preview"  value="Preview" disabled="disabled" onclick="javascript:mdpredemo();" ><input style="width:180px; font-weight:bold;font-size:20px; " disabled="disabled" name="go" value="Add to Blogger" type="submit"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://gj37765.blogspot.com" type="hidden"><input name="logoUrl" value="http://4.bp.blogspot.com/-5Kax-OWYtK0/UMX1tNjWpQI/AAAAAAAAFfI/M0bMbagXX54/s1600/MD~Logo.png" type="hidden"></form></center>
+<br>
+<center>
+<small> 
+Copyright &copy; 2012 All Rights Reserved by Muhammad Akbar @ <a href='http://www.muhammadakbar1.blogspot.com/'>Muhammad Akbar</a>
+</small>
+</center>
+</div>
+</body>
+</html>

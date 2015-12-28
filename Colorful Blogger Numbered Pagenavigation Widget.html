@@ -1,0 +1,264 @@
+
+<html>
+
+<head>
+
+<title>Colorful Blogger Numbered Pagenavigation Widget By Muhammad Akbar</title>
+
+<style type="text/css">
+            body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:small;}
+            #content-wrapper { width: 95%;  margin: 0 auto;  padding: 1%;  text-align: left; 
+            background:#BFCFFF;
+border:3px solid #0033CC;
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+            }
+            #content-wrapper h2 {font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #0033CC;font-size:16px;color:#333333;border:1px solid #000;text-align:center;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;
+            -webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+            }
+            fieldset{-moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;border:1px solid #000;}
+            fieldset legend{font-size:15px;font-weight:bold; padding:2px 10px;border:1px solid #000;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;}
+        </style>
+
+<script type="text/javascript">
+
+<!--
+
+function way2bloggingGenerate() {
+
+document.getElementsByName("go")[0].disabled = false;
+
+document.getElementsByName("gen")[0].disabled = true;
+
+var w2btextarea = document.getElementsByName("widget.content")[0];
+
+var w2b_numposts = document.getElementsByName("w2bnumposts")[0].value;
+
+var w2b_shownum = document.getElementsByName("w2bshownum")[0].value;
+
+var w2b_pretext = document.getElementsByName("w2bpretext")[0].value;
+
+var w2b_nextext = document.getElementsByName("w2bnextext")[0].value;
+
+var selectedtype="";
+
+         for (i=0; i<document.getElementsByName("w2bstyletype").length; i++)
+
+         {
+
+            if (document.getElementsByName("w2bstyletype")[i].checked==true)
+
+            {
+
+               selectedtype = document.getElementsByName("w2bstyletype")[i].value
+
+            }
+
+         }
+
+w2btextarea.value = "\<!-- Stylish colored  Navigation Widget For Blogger By bdlab @ http://24work.blogspot.com --\>\n";
+
+if (selectedtype == "style1")
+
+  {
+
+w2btextarea.value = w2btextarea.value +"\<style type=\"text/css\"\>\n#blog-pager{padding:5px 0 !important;}\n.showpageArea {font-weight: bold;margin:5px;}/* 24work.blogspot.com */\n.showpageArea a {text-decoration:underline;color: #fff;}/* 24work.blogspot.com */\n.showpageNum a, .showpage a {color: #fff;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px;margin:0 3px;padding:3px 5px; background: #9dd53a; background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageNum a:hover, .showpage a:hover {border: 1px solid #ccc; background: #6db3f2; background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6db3f2), color-stop(50%,#54a3ee), color-stop(51%,#3690f0), color-stop(100%,#1e69de)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); } /*24work.blogspot.com */\n.showpagePoint {color: #aaaaaa;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #e2e2e2; background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageOf {text-decoration:none;padding:3px;margin: 0 3px 0 0;}/* 24work.blogspot.com */\n.showpageNum a:link,.showpage a:link {text-decoration:none;color:#fff;}/* 24work.blogspot.com */\n\</style\>\n";
+
+  }
+
+else if (selectedtype == "style2")
+
+  {
+
+w2btextarea.value = w2btextarea.value +"\<style type=\"text/css\"\>\n#blog-pager{padding:5px 0 !important;}\n.showpageArea {font-weight: bold;margin:5px;}/* 24work.blogspot.com */\n.showpageArea a {text-decoration:underline;color: #fff;}/* 24work.blogspot.com */\n.showpageNum a, .showpage a {color: #fff;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #789EB1; background: -moz-linear-gradient(top, #789EB1 0%, #618FA7 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#789EB1), color-stop(100%,#618FA7)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#789EB1', endColorstr='#618FA7',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageNum a:hover, .showpage a:hover {border: 1px solid #ccc;background: #7d7e7d; background: -moz-linear-gradient(top, #7d7e7d 0%, #6B6B6B 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#6B6B6B)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#6B6B6B',GradientType=0 ); }/* 24work.blogspot.com */\n.showpagePoint {color: #aaaaaa;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #e2e2e2; background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageOf {text-decoration:none;padding:3px;margin: 0 3px 0 0;}/* 24work.blogspot.com */\n.showpageNum a:link,.showpage a:link {text-decoration:none;color:#fff;}/* 24work.blogspot.com */\n\</style\>\n";
+
+  }
+
+else if (selectedtype == "style3")
+
+  {
+
+w2btextarea.value = w2btextarea.value +"\<style type=\"text/css\"\>\n#blog-pager{padding:5px 0 !important;}\n.showpageArea {font-weight: bold;margin:5px;}/* 24work.blogspot.com */\n.showpageArea a {text-decoration:underline;color: #fff;}/* 24work.blogspot.com */\n.showpageNum a, .showpage a {color: #fff;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #f85032; background: -moz-linear-gradient(top, #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f85032), color-stop(50%,#f16f5c), color-stop(51%,#f6290c), color-stop(71%,#f02f17), color-stop(100%,#e73827)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageNum a:hover, .showpage a:hover {border: 1px solid #ccc; background: #aebcbf; background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aebcbf), color-stop(50%,#6e7774), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); }/* 24work.blogspot.com */\n.showpagePoint {color: #aaaaaa;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #e2e2e2; background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageOf {text-decoration:none;padding:3px;margin: 0 3px 0 0;}/* 24work.blogspot.com */\n.showpageNum a:link,.showpage a:link {text-decoration:none;color:#fff;}/* 24work.blogspot.com */\n\</style\>";
+
+  }
+
+else if (selectedtype == "style4")
+
+  {
+
+w2btextarea.value = w2btextarea.value +"\<style type=\"text/css\"\>\n#blog-pager{padding:5px 0 !important;}\n.showpageArea {font-weight: bold;margin:5px;}/* 24work.blogspot.com */\n.showpageArea a {text-decoration:underline;color: #fff;}/* 24work.blogspot.com */\n.showpageNum a, .showpage a {color: #fff;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #ffb76b; background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76b), color-stop(50%,#ffa73d), color-stop(51%,#ff7c00), color-stop(100%,#ff7f04)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageNum a:hover, .showpage a:hover {border: 1px solid #ccc; background: #9dd53a; background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); }/* 24work.blogspot.com */\n.showpagePoint {color: #aaaaaa;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #e2e2e2; background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageOf {text-decoration:none;padding:3px;margin: 0 3px 0 0;}/* 24work.blogspot.com */\n.showpageNum a:link,.showpage a:link {text-decoration:none;color:#fff;}/* 24work.blogspot.com */\n\</style\>";
+
+  }
+
+else
+
+  {
+
+w2btextarea.value = w2btextarea.value +"\<style type=\"text/css\"\>\n#blog-pager{padding:5px 0 !important;}\n.showpageArea {font-weight: bold;margin:5px;}/* 24work.blogspot.com */\n.showpageArea a {text-decoration:underline;color: #fff;}/* 24work.blogspot.com */\n.showpageNum a, .showpage a {color: #fff;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #3b679e; background: -moz-linear-gradient(top, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b679e), color-stop(50%,#2b88d9), color-stop(51%,#207cca),  color-stop(100%,#7db9e8)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageNum a:hover, .showpage a:hover {border: 1px solid #ccc; background: #aebcbf; background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aebcbf), color-stop(50%,#6e7774), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); }/* 24work.blogspot.com */\n.showpagePoint {color: #aaaaaa;text-decoration:none;border:1px solid #999;-webkit-border-radius:3px;-moz-border-radius:3px; margin:0 3px;padding:3px 5px; background: #e2e2e2; background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); }/* 24work.blogspot.com */\n.showpageOf {text-decoration:none;padding:3px;margin: 0 3px 0 0;}/* 24work.blogspot.com */\n.showpageNum a:link,.showpage a:link {text-decoration:none;color:#fff;}/* 24work.blogspot.com */\n\</style\>";
+
+  }
+
+w2btextarea.value = w2btextarea.value +"\n\<script type=\'text/javascript\'\>\nvar home_page=\"/\";\nvar urlactivepage=location.href;\nvar postperpage=" + w2b_numposts + ";\nvar numshowpage=" + w2b_shownum + ";\nvar upPageWord =\'" + w2b_pretext + "\';\nvar downPageWord =\'" + w2b_nextext + "\';\n\</script\>";
+
+w2btextarea.value = w2btextarea.value +"\n\<script src=\'http://safir85.ucoz.com/24work-blogspot/page-navigation/0-test-p-n-01_00.js\' type=\'text/javascript\'\>\</script\>\n";
+
+w2btextarea.value = w2btextarea.value +"\<!-- Stylish colored Numbered Page Navigation Widget For Blogger By bdlab @ http://24work.blogspot.com --\>";
+
+}
+
+function way2bloggingdefault() {
+
+document.getElementsByName("go")[0].disabled = true;
+
+document.getElementsByName("gen")[0].disabled = false;
+
+document.getElementsByName("w2bstyletype")[0].checked = true;
+
+document.getElementsByName("w2bnumposts")[0].value = "5";
+
+document.getElementsByName("w2bshownum")[0].value = "3";
+
+document.getElementsByName("w2bpretext")[0].value = "Previous";
+
+document.getElementsByName("w2bnextext")[0].value = "Next";
+
+document.getElementsByName("widget.content")[0].value = "";
+
+}       
+
+//-->
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="content-wrapper">
+
+<h2><font color="#FFFFFF">Colorful Blogger Numbered Pagenavigation Widget By Muhammad Akbar</font></h2>
+
+<fieldset><legend style="font-size:20px;">&nbsp;Select Color Style&nbsp;</legend>
+
+<table width="100%">
+
+<tbody>
+
+
+
+        <tr>
+
+                <td width="25%"  align="right"><input checked="checked" name="w2bstyletype" type="radio" value="style1"></td>
+
+                <td width="75%"><img src="http://2.bp.blogspot.com/-eiWmX0DVGls/UFgGXyhXI8I/AAAAAAAAC0k/Jij_vCcr33M/s1600/Image+2+Color+Style.jpg" alt="" width="320" height="34" /></td>
+
+        </tr>
+
+        <tr>
+
+                <td align="right"><input name="w2bstyletype" type="radio" value="style2"></td>
+
+                <td><img src="http://3.bp.blogspot.com/-8eCqlfYXoQM/UFgGZllfZAI/AAAAAAAAC0s/2et9069P7II/s1600/Image+3+Color+Style.jpg" alt="" width="323" height="37" /></td>
+
+        </tr>
+
+        <tr>
+
+                <td align="right"><input name="w2bstyletype" type="radio" value="style3"></td>
+
+                <td><img src="http://1.bp.blogspot.com/-Oiya1KGpBhw/UFgGbktF-WI/AAAAAAAAC00/dCGwpl_ZU7Q/s1600/Image+4+Color+Style.jpg" alt="" width="320" height="36" /></td>
+
+        </tr>
+
+
+
+        <tr>
+
+                <td align="right"><input name="w2bstyletype" type="radio" value="style4"></td>
+
+                <td><img src="http://3.bp.blogspot.com/-2_p_4tGxy8M/UFgGdvceBEI/AAAAAAAAC08/4VFzKM0jCa8/s1600/Image+5+Color+Style.jpg" alt="" width="320" height="36" /></td>
+
+        </tr>
+
+        <tr>
+
+                <td align="right"><input name="w2bstyletype" type="radio" value="style5"></td>
+
+                <td><img src="http://2.bp.blogspot.com/-DumEy8qYxY0/UFgGe8ZkmUI/AAAAAAAAC1E/JB2wKVA7B5Y/s1600/Image+6+Color+Style.jpg" alt="" /></td>
+
+        </tr>
+
+</tbody>
+
+</table>
+
+</fieldset><br>
+
+<fieldset><legend style="font-size:20px;">&nbsp;Settings&nbsp;</legend>
+
+<table width="100%">
+
+<tbody>
+
+        <tr>
+
+                <td width="50%">Number of Posts Per Page</td>
+
+                <td width="50%">: <input name="w2bnumposts" type="text" size="3" value="5"></td>
+
+        </tr>
+
+        <tr>
+
+                <td>How many numbers will <br>show in Your Page Navigation</td>
+
+
+                <td>: <input name="w2bshownum" type="text" size="3" value="3"> <i style="font-size:10px;">(*Preffered Value is 3)</i></td>
+
+        </tr>
+
+        <tr>
+
+                <td>"<b>Previous</b>" Page text</td>
+
+                <td>: <input name="w2bpretext" type="text" size="6" value="Previous"></td>
+
+        </tr>
+
+        <tr>
+
+                <td>"<b>Next</b>" Page text</td>
+
+                <td>: <input name="w2bnextext" type="text" size="6" value="Next"></td>
+
+        </tr>
+
+</tbody>
+
+</table>
+
+</fieldset><br>
+<center>
+<form method="post" action="http://www.blogger.com/add-widget" target="_blank">
+
+<input name="gen" style="width:100px;margin-right:5px;" value="Generate" onClick="javascript:way2bloggingGenerate();" type="button"><input style="width:100px;" value="Reset" onClick="javascript:way2bloggingdefault();" type="button"><br>
+
+<input style="width:205px;margin-top:5px;font-weight:bold;font-size:18px;" disabled="disabled" name="go" value="Add to Blogger" type="submit"><br>
+
+<textarea name="widget.content" style="display: none;width:0px;height:0px;"></textarea>
+
+<input name="infoUrl" value="http://widgetgenerators.blogspot.com" type="hidden">
+
+
+</form>
+</center>
+<div align="center"><br>
+    <b style="font-size:12px;">Copyright &#169; 2012 All Rights Rserved by Muhammad Akbar @ <a href="http://muhammadakbar1.blogspot.com">Muhammad Akbar</a></b>
+  
+</div>
+</div>
+
+</body>
+
+</html>
